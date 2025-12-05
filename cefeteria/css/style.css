@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.opciones {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 2%;
+}
+
+.hero {
+  position: relative;
+}
+
+h1 {
+  z-index: 1;
+  position: absolute;
+  color: white;
+}
+
+h2 {
+  color: rgb(85, 85, 85);
+  font-size: 25px;
+}
+
+.barrio {
+  color: #cf2e2e;
+}
