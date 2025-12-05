@@ -5,61 +5,82 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*header*/ 
 header {
-    height: auto;
+    background-color: rgb(215, 25, 45);
+    height: 140px;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 0 20%;
 }
 
 .section-header {
-    height: 80px;
-    background-color: rgb(215, 25, 45);
+    width: 60%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 0 20%;
-}
-
-figure {
-    padding-top: 3px;
+    height: 80px;
+    margin-top: 12px;
 }
 
 .header-ul {
     display: flex;
-    justify-content: center;
-    gap: 1px;
     list-style: none;
+    gap: 10px;
+}
+.esp-barra {
+    padding-right: 18px;
+}
+
+.icons-lista {
+    width: 25px;
+    padding-right: 8px;
+}
+
+.icons-lista-arrow {
+    width: 25px;
+    padding-left: 8px;
 }
 
 .header-ul li {
-    padding: 0 30px;
+    display: flex;
+    align-items: center;
     font-size: 14px;
+    padding: 0 5px;
+}
+
+nav {
+    background-color: white;
+    width: 100%;
 }
 
 nav ul {
+    width: 60%;
+    margin: 0 auto;
     display: flex;
-    height: 50px;
     justify-content: center;
     align-items: center;
-}
-
-nav ul li{
-    border: 1px solid rgb(226, 226, 226);
-    background-color: white;
-    color: rgb(102, 102, 102);
     list-style: none;
-    padding: 17px 60px;
-    font-weight: 100;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    height: 60px;
 }
 
+nav ul li {
+    color: rgb(82, 82, 82);
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+    text-align: center;
+    border: 1px solid rgb(236, 236, 236);
+}
+
+nav ul li:hover {
+    background-color: rgb(236, 236, 236);
+    cursor: pointer;
+}
+
+/*hero*/
 .section-img {
     background-image: url(/img/iberia_banner.jpg);
     height: 450px;
