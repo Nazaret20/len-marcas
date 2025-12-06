@@ -129,7 +129,7 @@ nav ul li:hover {
     padding: 5px;
 }
 
-.button-compra:hover {
+.button-compra:hover, .button-guias:hover {
     background-color:rgb(175, 14, 30);
     cursor: pointer;
 }
