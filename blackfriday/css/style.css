@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(240, 240, 240);
 }
 /*---------------Header--------------*/ 
 header {
@@ -94,6 +94,7 @@ nav ul li:hover {
 
 .section-img {
     background-image: url(/img/banner_ibe.jpg);
+    background-size: cover;
     height: 450px;
     width: 100%;
     padding-left: 25%;
@@ -116,7 +117,7 @@ nav ul li:hover {
     color: white;
 }
 
-button {
+.button-compra {
     margin-top: 30px;
     width: 300px;
     height: 55px;
@@ -128,7 +129,7 @@ button {
     padding: 5px;
 }
 
-button:hover {
+.button-compra:hover {
     background-color:rgb(175, 14, 30);
     cursor: pointer;
 }
@@ -157,7 +158,7 @@ button:hover {
 }
 
 .div1, .div2, .div3 {
-    width: 23%;
+    width: 350px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -225,7 +226,131 @@ button:hover {
 }
 
 /* ----------Seccion planifica vuelo----------- */
+.section-planifica {
+    width: 67%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.section-planifica h2 {
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.div-p {
+    margin: 30px 0;
+    display: flex;
+    gap: 40px;
+}
+
+.p-recom {
+    border-bottom: 2px solid rgb(215, 25, 45);
+    padding-bottom: 2px;
+}
+
+.section-8-divs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+    flex-wrap: wrap;
+}
+
+.div8 {
+    width: 255px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.div-vuelos {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.img-vuelos {
+    width: 100%;
+}
+
+.div-info-blanco {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.116);
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: 140px;
+    padding: 10px 20px;
+}
+
+.div-info-blanco p {
+    font-size: 14px;
+    color: grey;
+}
+
+.div-info-blanco h3 {
+    color: rgb(215, 25, 45);
+    font-size: 21px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.div-price {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 100;
+}
+
+.div-price p {
+    font-size: 24px;
+    color: black;
+}
+
+.flecha-dcha-price {
+    width: 15px;
+}
+
+/* -----------Último div de planifica----------- */
+.div-guias {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.116);
+    background-color: rgb(255, 255, 255);
+    padding: 20px 20px 38px 20px;
+    border-top: 2px solid rgb(215, 25, 45);
+}
+
+.div-guias p {
+    font-size: 14px;
+}
+
+.div-titulo-guias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.div-guias h3 {
+    color: rgb(215, 25, 45);
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.button-guias {
+    margin-top: 42px;
+    width: 150px;
+    height: 46px;
+    background-color: rgb(215, 25, 45);
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+}
+
+/* ----------Footer----------- */
 
 footer {
     width: 100%;
