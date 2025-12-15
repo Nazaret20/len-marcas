@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #212121;
+}
+
+/*----------------HEADER--------------*/
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-logo {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.logo {
+    width: 60px;
+}
+
+nav ul {
+    width: 100%;
+    height: 45px;
+    background-color: #784d3c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    color: #fff;
+    list-style: none;
+}
+
+nav ul li:hover {
+    color: #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    cursor: pointer;
+}
+
+/*----------------HERO--------------*/
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+.hero-img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+/*----------------SECTION PRESENTACION--------------*/
+
+.section-presentacion {
+    width: 60%;
+    height: 350px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.section-presentacion div {
+    padding: 0 50px;
+    width: 50%;
+}
+
+.section-presentacion div p {
+    margin-top: 20px;
+}
+
+.section-presentacion img {
+    width: 45%;
+    height: auto;
+}
+
+/*----------------SECTION SERVICIOS--------------*/
+
+.section-servicios {
+    width: 60%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-servicios div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-servicios div img {
+    width: 90%;
+}
+
+.section-servicios div h3 {
+    font-size: 25px;
+    color: #784d3c;
+}
+
+.section-servicios div p {
+    width: 80%;
+    font-size: 15px;
+}
+
+.section-servicios div button {
+    background-color: #784d3c;
+    color: #fff;
+    width: 40%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.section-servicios div button:hover {
+    background-color: #462d23;
+    cursor: pointer;
+}
+
+/*--------------------SECTION PROPIO--------------------*/
+.section-propio {
+    width: 60%;
+    margin: 0 auto;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #784d3c;
+}
+
+.section-propio h3 {
+    font-size: 35px;
+    color: #fff;
+}
+
+.section-propio img {
+    width: 30%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.section-propio ol {
+    margin-top: 30px;
+    padding-left: 14px;
+}
+
+.section-propio ol li {
+    padding: 5px 0;
+    color: #fff;
+
+}
+
+
+/*--------------------FOOTER--------------------*/
+footer {
+    margin-top: 80px;
+    width: 100%;
+    background-color: #784d3c;
+
+}
+
+footer div {
+    width: 60%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+footer img {
+    width: 75px;
+    height: auto;
+}
+
+footer ul {
+    display: flex;
+    gap: 50px;
+}
+
+footer ul li {
+    color: #fff;
+    list-style: none;
+}
+
+footer ul li:hover {
+    color: #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    cursor: pointer;
+}
