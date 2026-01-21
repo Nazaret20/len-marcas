@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+.descripcion, .info-receta {
+    width: 70%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+    color: rgb(175, 103, 20);
+}
+
+h2 {
+    color: rgb(116, 84, 43);
+}
+
+p {
+    padding: 10px 0;
+}
+
+.info-receta {
+    display: flex;
+    margin-top: 70px;
+}
+
+.utensilios, .ings {
+    flex: 1;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.paso-paso {
+    flex: 2;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.utensilios ul {
+    list-style: none;
+}
+
+.ings li, .paso-paso li, .utensilios li {
+    padding: 10px 0;
+}
+
+.imagenes {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 70px;
+}
+
+img {
+    width: 320px;
+}
+
+footer {
+    height: 70px;
+}
