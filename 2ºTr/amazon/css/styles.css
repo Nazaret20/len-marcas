@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    height: 60px;
+    background-color: #131921;
+}
+
+main {
+    height: 100vh;
+    width: 92%;
+    margin: 40px auto;
+}
+
+
+
+article {
+    height: 100vh;
+    width: 20%;
+    line-height: 25px;
+}
+
+.negrita {
+    margin-top: 20px;
+}
+
+.linea {
+    height: 4px;
+    width: 90%;
+    background-color: #3667a3;
+    display: block;
+    margin-top: 20px;
+}
+
+.circulo {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: 5px solid #3667a3;
+    border-radius: 20px;
+}
+
+
+.grid-container {
+    height: auto;
+    display: grid;
+
+}
