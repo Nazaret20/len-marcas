@@ -1,0 +1,57 @@
+:root {
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(23, 29, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav {
+    width: 60%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+    color: white;
+}
+
+nav ul .centro {
+    position: relative;
+    bottom: 12px;
+    color: rgb(255, 136, 0);
+    font-weight: 500;    
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 2px solid;
+}
+
+.tarjeta {
+    width: 80%;
+}
+
+.tarjeta img {
+    width: 100%;
+}
