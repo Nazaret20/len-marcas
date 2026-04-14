@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Document</title>
 </head>
-<body>
-     <header>
-        
-            <img class="logo" src="./img/logo-1695873427.jpg" alt="Logo foto K">
-        
 
-        <div>
-            <img class="menu-hamburguesa" src="./img/menu.svg" alt="logo menú">
-        </div>
+<body>
+    <header>
+
+        <img class="logo" src="./img/logo-1695873427.jpg" alt="Logo foto K">
+
+
+        <button class="menu-hamburguesa">
+            <img src="./img/menu.svg" alt="logo menú">
+        </button>
 
         <nav>
             <ul>
@@ -26,6 +28,91 @@
             </ul>
         </nav>
     </header>
-    
+
+    <section>
+        <h1>Cámaras profesionales</h1>
+        <div class="container">
+            <div class="tarjeta">
+                <div class="tarjeta-div-img">
+                    <img src="./img/nikon-z-fc.webp" alt="Cámara">
+                </div>
+                <h2>NIKON Z fc Cuerpo</h2>
+                <p class="descripcion">Inspirada en el icónico diseño de la Nikon FM2, esta cámara es ligera y está
+                    equipada con un sensor APS-C de 20.9 MP, grabación de vídeo en 4K y conectividad Wi-Fi/Bluetooth.
+                </p>
+                <button class="btn-comprar">Comprar</button>
+                <p class="rebaja">-10%</p>
+                <div class="container-like"><img class="like" src="./img/heart.svg" alt="like"></div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="tarjeta-div-img">
+                    <img src="./img/nikon-z50ii-16-50mm-f-35-63-vr.webp" alt="Cámara">
+                </div>
+                <h2>NIKON Z50II</h2>
+                <p class="descripcion">Esta cámara compacta y ligera combina la avanzada tecnología de los modelos
+                    superiores con una facilidad de uso excepcional.</p>
+                <button class="btn-comprar">Comprar</button>
+                <p class="rebaja">-30%</p>
+                <div class="container-like"><img class="like" src="./img/heart.svg" alt="like"></div>
+
+            </div>
+
+            <div class="tarjeta">
+                <div class="tarjeta-div-img">
+                    <img src="./img/nikon-z6-iii-24-200mm.webp" alt="Cámara">
+                </div>
+                <h2>NIKON Z6 III + objetivo</h2>
+                <p class="descripcion">El Kit Nikon con objetivo 24-200mm f/4-6.3 VR reúne la potencia de un sensor de
+                    24,5MP con procesador EXPEED 7 y vídeo 6K, junto a un zoom todoterreno estabilizado.</p>
+                <button class="btn-comprar">Comprar</button>
+                <p class="rebaja">-20%</p>
+                <div class="container-like"><img class="like" src="./img/heart.svg" alt="like"></div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="tarjeta-div-img">
+                    <img src="./img/nikon-z6-iii.webp" alt="Cámara">
+                </div>
+                <h2>NIKON Z6 III</h2>
+                <p class="descripcion">Nikon Z6 III combina velocidad, precisión y calidad de imagen en un cuerpo
+                    híbrido con sensor parcialmente apilado.</p>
+                <button class="btn-comprar">Comprar</button>
+                <p class="rebaja">-5%</p>
+                <div class="container-like"><img class="like" src="./img/heart.svg" alt="like"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="formulario">
+        <h2>Registro</h2>
+
+        <form action="#">
+            <div class="input-label">
+                <input type="email" name="email" required placeholder="tuEmail@gmail.com">
+                <label for="email"><img src="./img/email.svg" alt="logo email"> </label>
+            </div>
+
+            <div class="input-label">
+                <input type="password" name="password" required placeholder="tuContraseña1">
+                <label for="password"><img src="./img/passw.svg" alt="logo password"> </label>
+            </div>
+
+            <button class="btn-form" type="submit">Enviar</button>
+
+        </form>
+
+        
+        <form action="#">
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>@FotoK</p>
+    </footer>
+
 </body>
+
 </html>
