@@ -13,15 +13,6 @@
   'opsz' 24
 }
 
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-
 .flex {
     display: flex;
     gap: 1rem;
@@ -31,7 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 5%;
-    background-color: #f5f5f5;
+    background-color: lightblue;
 }
 
 li {
@@ -45,20 +36,55 @@ a {
 
 /*--------------------------------*/
 .section {
-    gap: 6rem;
-    width: 40%;
+    gap: 8%;
+    width: 50%;
     margin: 4rem auto;
+    align-items: center;
+    border: 2px solid lightblue;
+    background-color: rgba(173, 216, 230, 0.39);
+    border-radius: 10px;
+    padding: 2rem;
 }
+
+/* .div-img {
+    width: 100%;
+    min-width: 150px; 
+}
+
+.div-img img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+} */
 
 .contenido-auri {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 button {
     width: 6rem;
-    padding: 5px;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    background-color:lightblue;
+    border: none;
+    border-radius: 5px;
 }
+
+button:hover {
+    background-color: rgb(156, 212, 231);
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .section {
+        width: 70%;
+    }
+}
+
 /*pantalla grande*/
 @media (min-width: 700px) {
     .material-symbols-outlined {
@@ -71,13 +97,26 @@ button {
     .contenido {
         position: fixed;
         right: -10rem;
-        top: 5rem;
+        top: 5.5rem;
         padding: 2rem;
-        background-color: #f5f5f5;
+        background-color: lightblue;
         flex-direction: column;
         opacity: 0;
         transition: all 0.5s;
     }
+
+    .section {
+        width: 70%;
+        flex-direction: column;
+    }
+
+    /* .div-img img {
+        width: 50%;
+    } */
+}
+
+.nuevo-fondo {
+    background-color: rgba(11, 71, 148, 0.445);
 }
 
 .mostrar {
