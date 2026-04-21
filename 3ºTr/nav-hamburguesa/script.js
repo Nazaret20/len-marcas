@@ -1,4 +1,6 @@
-const btnMenu = document.querySelector(".menu-hamburguesa");
-btnMenu.addEventListener("click", () => {
-    console.log("hola");
+const iconMenu = document.querySelector(".menu-hamburguesa");
+const menuUl = document.querySelector(".menu");
+
+iconMenu.addEventListener("click", () => {
+    menuUl.classList.toggle("mostrar");
 })
