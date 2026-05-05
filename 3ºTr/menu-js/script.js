@@ -18,3 +18,17 @@ btnSection.addEventListener("click", () => {
         i = 0
     }
 })
+
+// const listaLi = document.querySelectorAll(".contenido li")
+
+// const alerta = () => {
+//     alert(2+2);
+// }
+
+// listaLi[0].addEventListener("click", alerta)
+
+const nombre = document.querySelector(".esquina")
+
+nombre.addEventListener("click", () => {
+    nombre.classList.toggle("mover")
+})

@@ -44,10 +44,11 @@ a {
     background-color: #add8e663;
     border-radius: 10px;
     padding: 2rem;
+    position: relative;
 }
 
-/* .div-img {
-    width: 100%;
+.div-img {
+    width: 30%;
     min-width: 150px; 
 }
 
@@ -55,9 +56,9 @@ a {
     width: 100%;
     object-fit: cover;
     height: auto;
-} */
+}
 
-.contenido-auri {
+.contenido-personaje {
     flex-direction: column;
     gap: 1.5rem;
 }
@@ -77,6 +78,17 @@ button {
 button:hover {
     background-color: rgb(156, 212, 231);
     cursor: pointer;
+}
+
+.esquina {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 60px;
+    height:25px;
+    background-color: rgb(209, 24, 0);
+    text-align: center;
+    color: white;
 }
 
 @media (max-width: 1000px) {
@@ -122,4 +134,8 @@ button:hover {
 .mostrar {
     right: 0;
     opacity: 1;
+}
+
+.mover {
+    right: -10px;
 }
