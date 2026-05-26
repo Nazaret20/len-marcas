@@ -2,13 +2,14 @@
   font-family: var(--fuente);
 }
 
+
 header {
   width: 100%;
-  height: 150px;
-  background-color: var(--primario);
+  height: 120px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: var(--primario);
   font-size: clamp(1.2rem, 1.2vw, 1.3rem);
 }
 
@@ -19,7 +20,7 @@ header div {
 }
 
 header div img {
-  width: clamp(8rem, 9vw, 12rem);
+  width: clamp(7.5rem, 9vw, 12rem);
 }
 
 .nav {
@@ -34,6 +35,7 @@ header div img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 10px;
 }
 .nav-contenido li {
   list-style: none;
@@ -41,16 +43,149 @@ header div img {
 
 .nav a {
   text-decoration: none;
-  color: var(--color-fuente);
+  color: var(--fuente-oscura);
 }
 
-@media (min-width: 700px) {
+.nav a:hover {
+  color: var(--hover);
+}
+
+
+/*--------------MAIN-----------------*/
+.hero {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+  background-color: var(--fuente-oscura);
+  color: var(--fuente-clara);
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+/*------------------ */
+.quien-es {
+  width: 50%;
+  margin: 80px auto;
+}
+
+.quien-es h2 {
+  font-size: clamp(1.5rem, 1.8vw, 2rem);
+  margin-bottom: 30px;
+}
+
+.quien-es-contenido {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.div-img-quien {
+  width: 100%;
+}
+
+.div-img-quien img {
+    width: clamp(14rem, 15vw, 25rem);
+
+}
+
+/*------------------- */
+.lanzamiento {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 80px auto;
+  background-color: var(--secundario);
+  border: 1px solid var(--detalles);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.lanzamiento div {
+  width: 40%;
+}
+
+.lanzamiento h3 {
+  margin-bottom: 10px;
+}
+
+.lanzamiento div img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.lanzamiento a {
+  text-decoration: none;
+  color: var(--fuente-oscura);
+}
+
+/*------------------ */
+.lo-mas-vendido {
+  width: 350px;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid var(--fuente-oscura);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.lo-mas-vendido img {
+  width:100%;
+}
+
+.lo-mas-vendido button {
+  width: 140px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--fuente-oscura);
+  color: var(--fuente-clara);
+  font-size: clamp(0.9rem, 1vw, 1.2em);
+}
+
+.lo-mas-vendido button:hover {
+  background-color: var(--secundario);
+  color: var(--fuente-oscura);
+  cursor: pointer;
+}
+
+.lo-mas-vendido a {
+  text-decoration: none;
+  color: var(--fuente-oscura);
+}
+
+
+/*--------------FOOTER--------------*/
+footer {
+  width: 100%;
+  height: 60px;
+  margin-top: 50px;
+  text-align: center;
+  padding-top: 20px;
+  background-color: var(--primario);
+}
+
+
+/*--------------MEDIA--------------*/
+@media (min-width: 500px) {
   .hamburguesa {
     display: none;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .nav-contenido {
     display: none;
   }

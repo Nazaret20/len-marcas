@@ -91,6 +91,25 @@ button:hover {
     color: white;
 }
 
+.carrito {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    transition: all 0.5s;
+    background-color: #add8e6;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.items {
+    align-items: center;
+    justify-content: center;
+}
+
+.items img {
+    width: 40px;
+}
+
 @media (max-width: 1000px) {
     .section {
         width: 70%;
@@ -102,6 +121,16 @@ button:hover {
     .material-symbols-outlined {
         display: none;
     }
+
+    .sumarioCompra {
+        position: fixed;
+        top: -35rem;
+        right: 0;
+        transition: all 0.5s;
+        z-index: 1;
+    }
+
+
 }
 
 /*pantalla pequeña*/
@@ -115,11 +144,22 @@ button:hover {
         flex-direction: column;
         opacity: 0;
         transition: all 0.5s;
+        z-index: 1;
+        border-radius: 5px;
     }
 
     .section {
         width: 70%;
         flex-direction: column;
+    }
+   
+    .sumarioCompra {
+        display: none;
+        transition: all 0.5s;  
+    }
+
+    .carrito {
+        z-index: 1;
     }
 
     /* .div-img img {
@@ -137,5 +177,9 @@ button:hover {
 }
 
 .mover {
+    left: auto;
     right: -10px;
+    top: -10px;
 }
+
+

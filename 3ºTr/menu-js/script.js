@@ -1,3 +1,5 @@
+/*---------------AURI-----------------*/
+
 const iconMenu = document.querySelector(".material-symbols-outlined")
 const menuUl = document.querySelector(".contenido")
 
@@ -27,8 +29,25 @@ btnSection.addEventListener("click", () => {
 
 // listaLi[0].addEventListener("click", alerta)
 
+/*---------------ARISTO-----------------*/
 const nombre = document.querySelector(".esquina")
 
 nombre.addEventListener("click", () => {
     nombre.classList.toggle("mover")
 })
+
+/*---------------CARRITO-----------------*/
+const carritoIcon = document.querySelector(".carrito-svg");
+
+const carrito = document.querySelector(".carrito")
+
+carritoIcon.addEventListener("click", () => {
+    console.log("asd");
+    
+    carrito.classList.toggle("sumarioCompra")
+})
+
+
+
+
+
