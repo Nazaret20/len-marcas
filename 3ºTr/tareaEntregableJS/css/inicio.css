@@ -24,11 +24,6 @@ h1 {
   margin: 80px auto;
 }
 
-h2 {
-  font-size: clamp(1.5rem, 1.8vw, 2rem);
-  margin-bottom: 30px;
-}
-
 .quien-es-contenido {
   width: 100%;
   display: flex;
@@ -118,28 +113,6 @@ h2 {
   height: 250px;
   object-fit: cover;
 }
-.contenedor-destacados h3 {
-  font-size: clamp(1.3rem, 1.4vw, 1.5rem);
-}
-.contenedor-destacados p {
-  font-size: clamp(1.1rem, 1.2vw, 1.3rem);
-}
-
-.contenedor-destacados button {
-  width: 200px;
-  height: 40px;
-  border: none;
-  border-radius: 6px;
-  background-color: var(--fuente-oscura);
-  color: var(--fuente-clara);
-  font-size: clamp(0.9rem, 1vw, 1.2em);
-}
-
-.contenedor-destacados button:hover {
-  background-color: var(--primario);
-  color: var(--fuente-oscura);
-  cursor: pointer;
-}
 
 .link-ver-mas {
   display: block;
@@ -173,17 +146,19 @@ h2 {
   }
 
   .lanzamiento div {
-    width: 350px;
+    width: 70%;
   }
 
   .lanzamiento div img {
-    width: 350px;
+    width: 100%;
   }
 }
 
 @media (max-width: 700px) {
   .quien-es-contenido {
     flex-direction: column;
+    min-width: 250px;
+
   }
 }
 

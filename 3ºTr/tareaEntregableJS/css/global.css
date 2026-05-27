@@ -4,7 +4,8 @@
   --hover: #7e6d49;
   --fuente-clara: #eeeeee;
   --fuente: "Nunito", sans-serif;
-  --secundario: #ebdddb;
+  --secundario: #ebe6d0;
+  --sombra: #555555;
 }
 
 * {
@@ -65,6 +66,39 @@ header div img {
 
 .nav a:hover {
   color: var(--hover);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 1.8vw, 2rem);
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: clamp(1.3rem, 1.4vw, 1.5rem);
+}
+
+h4 {
+  font-size: clamp(1.1rem, 1.2vw, 1.3rem);
+}
+
+p {
+  font-size: clamp(1rem, 1.1vw, 1.2rem);
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--fuente-oscura);
+  color: var(--fuente-clara);
+  font-size: clamp(0.9rem, 1vw, 1.2em);
+}
+
+button:hover {
+  background-color: var(--sombra);
+  color: var(--fuente-clara);
+  cursor: pointer;
 }
 
 /*--------------FOOTER--------------*/
