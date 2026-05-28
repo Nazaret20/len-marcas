@@ -4,14 +4,6 @@
   height: auto;
 }
 
-h1 {
-  text-align: center;
-  font-size: clamp(1.5rem, 1.8vw, 2.1rem);
-  background-color: var(--fuente-oscura);
-  color: var(--fuente-clara);
-  padding: 10px;
-}
-
 .hero img {
   width: 100%;
   height: 100%;
@@ -52,11 +44,6 @@ h1 {
   margin-bottom: 100px;
 }
 
-.lanzamiento h3 {
-  font-size: clamp(1.4rem, 1.6vw, 2rem);
-  margin-bottom: 15px;
-}
-
 .lanzamiento-img {
   width: clamp(350px, 60vw, 450px);
 }
@@ -65,11 +52,6 @@ h1 {
   width: 100%;
   border-radius: 10px;
 }
-
-.lanzamiento a {
-  text-decoration: none;
-  color: var(--fuente-oscura);
-} 
 
 /*------------------ */
 .destacados {
@@ -128,12 +110,6 @@ footer img {
   padding-top: 10px;
 }
 
-footer a {
-  text-decoration: none;
-  color: var(--fuente-oscura);
-}
-
-
 /*--------------MEDIA--------------*/
 @media (max-width: 1400px) {
   .quien-es,
@@ -171,10 +147,6 @@ footer a {
 
   .lanzamiento div {
     width: 100%;
-  }
-
- 
-
-  
+  } 
 }
 
