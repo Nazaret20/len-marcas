@@ -170,11 +170,22 @@ h1 {
 /*--------------FOOTER--------------*/
 footer {
   width: 100%;
-  height: 60px;
+  height: 80px;
   margin-top: 50px;
-  text-align: center;
-  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   background-color: var(--primario);
+}
+
+footer img {
+  padding-top: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--fuente-oscura);
 }
 
 
