@@ -122,24 +122,11 @@ h1 {
   transition: all .3s;
 }
 
-<<<<<<< HEAD
-
-/*--------------FOOTER--------------*/
-footer {
-  width: 100%;
-  height: 80px;
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  background-color: var(--primario);
-=======
 .link-ver-mas:hover {
   color: var(--hover);
   transform: scale(1.2);
   transition: all .3s;
->>>>>>> cambios-casa
+
 }
 
 footer img {
