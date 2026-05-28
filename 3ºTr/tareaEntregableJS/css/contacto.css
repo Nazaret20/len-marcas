@@ -1,0 +1,39 @@
+.section-form {
+    width: 30%;
+    min-width: 300px;
+    margin: 60px auto;
+}
+
+.form {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form input {
+    height: 2.5rem;
+    padding-left: 5px;
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
+}
+
+.preguntas {
+    width: 50%;
+    margin: 0 auto;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contratacion {
+    width: 50%;
+    margin: 60px auto;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--secundario);
+    border-radius: 10px;
+}

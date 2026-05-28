@@ -1,56 +1,3 @@
-* {
-  font-family: var(--fuente);
-}
-
-
-header {
-  width: 100%;
-  height: 120px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--primario);
-  font-size: clamp(1.2rem, 1.2vw, 1.3rem);
-}
-
-header div {
-  width: 20%;
-  display: flex;
-  justify-content: center;
-}
-
-header div img {
-  width: clamp(7.5rem, 9vw, 12rem);
-}
-
-.nav {
-  width: 30%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.nav-contenido {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 10px;
-}
-.nav-contenido li {
-  list-style: none;
-}
-
-.nav a {
-  text-decoration: none;
-  color: var(--fuente-oscura);
-}
-
-.nav a:hover {
-  color: var(--hover);
-}
-
-
 /*--------------MAIN-----------------*/
 .hero {
   width: 100%;
@@ -59,25 +6,22 @@ header div img {
 
 h1 {
   text-align: center;
+  font-size: clamp(1.5rem, 1.8vw, 2.1rem);
   background-color: var(--fuente-oscura);
   color: var(--fuente-clara);
+  padding: 10px;
 }
 
 .hero img {
   width: 100%;
   height: 100%;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 /*------------------ */
 .quien-es {
   width: 50%;
   margin: 80px auto;
-}
-
-.quien-es h2 {
-  font-size: clamp(1.5rem, 1.8vw, 2rem);
-  margin-bottom: 30px;
 }
 
 .quien-es-contenido {
@@ -91,8 +35,7 @@ h1 {
 }
 
 .div-img-quien img {
-    width: clamp(14rem, 15vw, 25rem);
-
+  width: clamp(14rem, 15vw, 25rem);
 }
 
 /*------------------- */
@@ -107,6 +50,10 @@ h1 {
   border: 1px solid var(--detalles);
   border-radius: 10px;
   padding: 1rem;
+}
+
+.lanzamiento h3 {
+  font-size: clamp(1.4rem, 1.6vw, 2rem);
 }
 
 .lanzamiento div {
@@ -128,12 +75,32 @@ h1 {
 }
 
 /*------------------ */
-.lo-mas-vendido {
-  width: 350px;
-  margin: 80px auto;
+.destacados {
+  width: 80%;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+.contenedor-destacados {
+  width: 100%;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contenedor-destacados div {
+  width: 400px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   gap: 15px;
   border: 1px solid var(--fuente-oscura);
@@ -141,31 +108,21 @@ h1 {
   padding: 1rem;
 }
 
-.lo-mas-vendido img {
-  width:100%;
+.contenedor-destacados img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
-.lo-mas-vendido button {
-  width: 140px;
-  height: 35px;
-  border: none;
-  border-radius: 6px;
-  background-color: var(--fuente-oscura);
-  color: var(--fuente-clara);
-  font-size: clamp(0.9rem, 1vw, 1.2em);
-}
-
-.lo-mas-vendido button:hover {
-  background-color: var(--secundario);
-  color: var(--fuente-oscura);
-  cursor: pointer;
-}
-
-.lo-mas-vendido a {
+.link-ver-mas {
+  display: block;
   text-decoration: none;
   color: var(--fuente-oscura);
+  font-size: clamp(1.2rem, 1.3vw, 1.4rem);
+  transition: all .3s;
 }
 
+<<<<<<< HEAD
 
 /*--------------FOOTER--------------*/
 footer {
@@ -177,6 +134,12 @@ footer {
   align-items: center;
   gap: 1rem;
   background-color: var(--primario);
+=======
+.link-ver-mas:hover {
+  color: var(--hover);
+  transform: scale(1.2);
+  transition: all .3s;
+>>>>>>> cambios-casa
 }
 
 footer img {
@@ -190,14 +153,54 @@ footer a {
 
 
 /*--------------MEDIA--------------*/
-@media (min-width: 500px) {
-  .hamburguesa {
-    display: none;
+@media (max-width: 1400px) {
+  .quien-es,
+  .lanzamiento,
+  .destacados {
+    width: 70%;
+  }
+}
+
+@media (max-width: 950px) {
+  .lanzamiento {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lanzamiento div {
+    width: 70%;
+  }
+
+  .lanzamiento div img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .quien-es-contenido {
+    flex-direction: column;
+    min-width: 250px;
+
   }
 }
 
 @media (max-width: 500px) {
-  .nav-contenido {
-    display: none;
+  .nav-contenido li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .lanzamiento {
+    min-width: 250px;
+  }
+
+  .lanzamiento div {
+    width: 100%;
+  }
+
+  .lanzamiento div img {
+    width: 100%;
   }
 }
+
