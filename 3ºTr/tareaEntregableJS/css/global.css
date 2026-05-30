@@ -6,6 +6,7 @@
   --fuente: "Nunito", sans-serif;
   --secundario: #ebe6d0;
   --sombra: #555555;
+  --estrellas: #ffc107;
 }
 
 * {
@@ -69,6 +70,12 @@ header div img {
 .nav a:hover {
   color: var(--hover);
 }
+/* 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
 
 h1 {
   text-align: center;
@@ -120,6 +127,23 @@ input {
   height: 2.5rem;
   padding-left: 5px;
   font-size: clamp(1rem, 1.1vw, 1.2rem);
+}
+
+.btn-subir { 
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-subir:hover {
+  transform: scale(1.1);
 }
 
 /*--------------FOOTER--------------*/
