@@ -58,6 +58,7 @@ header div img {
   align-items: center;
   gap: 20px;
 }
+
 .nav-contenido li {
   list-style: none;
 }
@@ -70,6 +71,7 @@ header div img {
 .nav a:hover {
   color: var(--hover);
 }
+
 /* 
 main {
   display: flex;
@@ -129,7 +131,7 @@ input {
   font-size: clamp(1rem, 1.1vw, 1.2rem);
 }
 
-.btn-subir { 
+.btn-subir {
   display: block;
   width: 70px;
   height: 70px;
@@ -150,18 +152,19 @@ input {
 footer {
   width: 100%;
   margin-top: 50px;
-  text-align: center;
-  padding-top: 20px;
+  padding: 10px;
   background-color: var(--primario);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 footer img {
   padding-top: 10px;
 }
+
 /*--------------MEDIA--------------*/
 
 @media (min-width: 500px) {

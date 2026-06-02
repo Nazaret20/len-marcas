@@ -1,0 +1,154 @@
+  /*-----------------Section 1--------------------*/
+  .hero {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /*-----------------Section 2--------------------*/
+  .quien-es {
+    width: 50%;
+    margin: 80px auto;
+  }
+
+  .quien-es-contenido {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+  }
+
+  .div-img-quien {
+    width: 100%;
+  }
+
+  .div-img-quien img {
+    width: clamp(14rem, 15vw, 25rem);
+  }
+
+  /*-----------------Section 3--------------------*/
+  .lanzamiento {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    background-color: var(--secundario);
+    border: 1px solid var(--detalles);
+    padding: 2rem;
+    margin-bottom: 100px;
+  }
+
+  .lanzamiento-img {
+    width: clamp(350px, 60vw, 450px);
+  }
+
+  .lanzamiento-img img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .lanzamiento a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /*-----------------Section 4--------------------*/
+  .destacados {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contenedor-destacados {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .contenedor-destacados div {
+    width: 400px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid var(--fuente-oscura);
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .contenedor-destacados img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .link-ver-mas {
+    display: block;
+    text-decoration: none;
+    color: var(--fuente-oscura);
+    font-size: clamp(1.2rem, 1.3vw, 1.4rem);
+    transition: all .3s;
+    margin: 40px 0;
+  }
+
+  .link-ver-mas:hover {
+    color: var(--hover);
+    transform: scale(1.2);
+    transition: all .3s;
+  }
+
+  /*--------------MEDIA--------------*/
+  @media (max-width: 1400px) {
+
+    .quien-es,
+    .destacados {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 950px) {
+    .lanzamiento {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lanzamiento div {
+      width: 350px;
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .quien-es-contenido {
+      flex-direction: column;
+      min-width: 250px;
+
+    }
+  }
+
+  @media (max-width: 500px) {
+    .nav-contenido li {
+      width: 100%;
+      text-align: left;
+    }
+
+    .lanzamiento div {
+      width: 100%;
+    }
+  }

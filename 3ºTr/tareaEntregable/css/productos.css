@@ -5,6 +5,7 @@ h1 {
   padding: 0;
 }
 
+/*-----------------Section 1--------------------*/
 .section-grid {
   width: 70%;
   min-width: 300px;
@@ -44,23 +45,27 @@ h1 {
 }
 
 .container-like {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: 10px;
-  left: 10px;
+  right: 10px;
   background-color: var(--background-like);
   border-radius: 50px;
   padding: 4px;
 }
 
 .like {
-  position: relative;
-  top: 2px;
-  left: 1px;
-  transition: transform 0.2s; cursor: pointer;
+  cursor: pointer;
+  transition: all 0.5s;
+  transform: scale(1);
 }
 
+.favorito {
+  transform: scale(1.3);
+}
+
+/*-----------------Section 2--------------------*/
 .newsletter {
   width: 50%;
   min-width: 300px;
@@ -79,6 +84,7 @@ h1 {
   min-width: 300px;
 }
 
+/*-----------------Section 3--------------------*/
 .testimonios {
   width: 50%;
   min-width: 300px;
@@ -133,7 +139,6 @@ h1 {
 
   .testimonios-container {
     grid-template-columns: repeat(2, 1fr);
-
   }
 }
 
@@ -148,10 +153,5 @@ h1 {
 
   .testimonios-container {
     grid-template-columns: repeat(1, 1fr);
-
   }
-}
-
-.favorito { 
-  transform: scale(1.8);
 }

@@ -5,6 +5,7 @@ h1 {
     padding: 0;
 }
 
+/*-----------------Section 1--------------------*/
 .section-form {
     width: 40%;
     min-width: 300px;
@@ -24,6 +25,7 @@ h1 {
   transition: all 0.3s ease; 
 }
 
+/*-----------------Section 2--------------------*/
 .preguntas {
     width: 50%;
     min-width: 300px;
@@ -34,6 +36,7 @@ h1 {
     gap: 20px;
 }
 
+/*-----------------Section 3--------------------*/
 .contratacion {
     width: 50%;
     min-width: 300px;
@@ -47,12 +50,23 @@ h1 {
 }
 
 .contratacion a {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .contratacion hr {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
+.contratacion div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contratacion div img {
+    width: 30px;
+}
+
+/*-----------------MEDIA--------------------*/
 @media (max-width: 1200px) {
     .section-form {
         width: 50%;
